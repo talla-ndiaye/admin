@@ -1,21 +1,20 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { useApp } from '@/contexts/AppContext';
 import { cn } from '@/lib/utils';
 import {
-  LayoutDashboard,
-  Users,
   BookOpen,
-  UserCheck,
-  Users2,
+  Bus,
   CreditCard,
   GraduationCap,
-  Bus,
-  Settings,
+  LayoutDashboard,
   LogOut,
   School,
+  Settings,
+  UserCheck,
+  Users,
+  Users2,
 } from 'lucide-react';
-import { useApp } from '@/contexts/AppContext';
-import { Button } from '@/components/ui/button';
+import { Link, useLocation } from 'react-router-dom';
 
 const navigation = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },

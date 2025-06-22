@@ -1,15 +1,14 @@
-import React from 'react';
-import { Bell, Moon, Sun, Search } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { useApp } from '@/contexts/AppContext';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { useApp } from '@/contexts/AppContext';
+import { Bell, Moon, Search, Sun } from 'lucide-react';
 
 export function Header() {
   const { user, isDarkMode, toggleTheme, notifications } = useApp();
